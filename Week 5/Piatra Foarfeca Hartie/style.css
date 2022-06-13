@@ -1,0 +1,179 @@
+/* Main */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Background Img */
+
+.backgroundImg {
+  width: 100%;
+  height: 100%;
+  background-image: url(rockPaperSc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur (8px);
+  margin: 0 auto;
+  display: block;
+  position: fixed;
+}
+
+/* Box */
+
+.box {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1000px;
+  height: 600px;
+  display: flex;
+
+  border: 4px;
+  border-width: 4px;
+  border-color: cadetblue;
+  border-radius: 2px;
+  z-index: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.player {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  
+}
+
+/* Scores */
+
+.score {
+  display: flex;
+  flex-direction:row;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+ 
+}
+
+.score-user {
+  padding-left:10px;
+  padding-top:10px;
+}
+
+.score-computer {
+  padding-top:10px;
+  
+}
+
+.scoreC{
+  justify-content: flex-end;
+}
+
+.num-comp {
+  padding-right:10px;
+  padding-top:10px;
+}
+
+.num-user{
+  padding-top: 10px
+}
+
+
+.game {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px
+}
+
+/* Images*/
+
+.left--1 {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.right--1 {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  margin-top: 50px;
+}
+
+
+
+/* Buttons */
+
+.btn {
+  border: 3px solid;
+  border-color: azure;
+  border-radius: 3px;
+  background-color: black;
+  width: 120px;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.play{
+  top:500px
+}
+
+.try-again{
+  top:30px
+  }
+  
+/* Text Winner Hide */
+
+.winnerC  {
+  margin-top: 200px;
+  color: goldenrod;
+  position: absolute;
+  font-size: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.winnerU {
+  margin-top: 200px;
+  color: goldenrod;
+  position: absolute;
+  font-size: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hide {
+  display: none;
+}
+
+
